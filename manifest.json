@@ -1,0 +1,21 @@
+{
+    "manifest_version" : 2,
+    "name" : "DVD",
+    "version" : "1.0.0",
+
+    "browser_action" : {
+        "default_title" : "DVD"
+    },
+
+    "permissions" : ["activeTab"],
+
+    "content_scripts" : [
+        {
+            "matches" : ["<all_urls>"],
+            "js" : ["jquery.js","content.js"],
+            "persistent": false
+        }
+    ]
+
+
+}
